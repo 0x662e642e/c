@@ -1,0 +1,45 @@
+Operadores
+==========
+=	atribuição, atribui um valor em uma variável. O valor deve estar à direita do operador e a varíavel à esquerda do operador.
+variavel = expressão|valor
+
+Matemáticos
+===========
++	soma|unário
+-	subtração|unário
+*	multiplicação
+/	divisão
+%	módulo (resto)
+
+Precedência
+===========
+()
+% / *
++ -
+direita para esquerda
+
+Relacionais
+===========
+>	maior
+>=	maior ou igual
+<	menor
+<=	menor ou igual
+==	igual
+!=	diferente
+1	verdadeiro
+0	falso
+
+Lógico
+======
+&&	e
+||	ou
+!	negação
+
+Bit a bit
+=========
+~	complemento
+&	e
+|	ou
+^	xor
+<<	deslocamento à esquerda
+>>	deslocamento à direita

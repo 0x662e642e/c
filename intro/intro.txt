@@ -1,0 +1,25 @@
+- ESTRUTURA MÍNIMA DE UM PROGRAMA EM C
+======================================
+  #include<stdio.h>     serve para declarar bibliotecas necessárias que deverão ser importadas e declarações globais
+  int main (){          a função principal main (do tipo inteiro) que dá o início da execução do programa e marcado pela abertura das chaves
+                        corpo do programa, aqui você vai escrever o código do seu programa, manipular variáveis, interagir com usuários, etc
+      getchar();        espera a confirmação (qualquer entrada do teclado entrada), facilitando assim a leitura
+      return 0;         retorna ao sistema operacional o código 0, informando que o programa foi compilado de forma correta.
+                        Para questoões de praticidade você pode apenas em uma linha, compilar o código, executar o arquivo binário e verificar se o código de retorno foi 0.
+                        O comando para ser executado é: gcc tests.c && ./a.out && echo -e '\n\n'$?
+  }                     a chave fechada encerra o código
+
+- Indentação
+============
+  É o espaço colocado na margem visando tornar a leitura do código mais legível, diante das diferentes hierarquias do código.
+
+- Compilação
+============
+  Pré-processamento: o código-fonte é convertido em outro arquivo, onde o compilador remove comentários e diretivas de execução;
+  Verificação sintática: o compilador verifica se há erros de sintaxe no código;
+  Compilação: é criado um objeto para cada código fonte com instruções de linguagem de máquina;
+  Link-edição: o link-editor une  todos os objetos que fazem parte do programa.
+
+- Comentários
+=============
+  Trecho de texto que é ignorado pelo compilador. Os comentários podem ser de meia ou uma linha inteira (//) ou de várias linhas (utilizado para iniciar e encerrar esse texto.

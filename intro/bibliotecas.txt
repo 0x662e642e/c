@@ -1,0 +1,64 @@
+- BIBLIOTECAS
+=============
+- Importada pelo comando #include<biblioteca.h>, serve para importar trechos de códigos com funções já desenvolvidas.
+- Sua principal característica é não ter uma função main. 
+- A biblioteca é composta por dois arquivos o header (.h) que contém as declaraçõe e definições e o código fonte (.c), que contém a implementação das funções definidas nos cabeçalhos.
+
+    #include<biblioteca.h>	utilizado para incluir bibliotecas padrão que o compilador conhece
+    #include "biblioteca.h"	utilizado para incluir bibliotecas que estão no mesmo direório do arquivo
+
+stdio.h
+=======
+int remove(const char *)				apaga arquivo
+int rename(const char*, const char *)			renomeia o arquivo
+int fclose(file *)					fecha arquivo
+int fflush(file *)					limpa o buffer
+file * fopen(const char *, const char *)		abre o arquivo
+void setbuf(file *, char *)				controla o fluxo de armazenamento em buffer
+int fprint(file *, const char *, ...)			grava uma saída formatada em arquivo
+int fscanf(file *, cinst char *, ...)			lê dados formatados do arquivo
+int printf(const char *, ...)				imprime os dados formatados na saída padrão
+int scanf(const char *, ...)				lê dados formatados da entrada padrão
+int sprintf(char *, const char *, ...)			grava dado formatados em uma string
+int sscanf(const char *, const char *, int, ...)	lê dados formatados a partir de uma string	 
+int fgetc(file *)					lê um caractere do arquivo
+char * fgets(char *, int, file *)			lê uma string do arquivo
+int fputc(int, file *)					escreve um caractere em arquivo
+int fputs(const char *, file *)				escreve uma string em arquivo
+int getc(file *)					lê um caractere do arquivo
+int getchar(void)					lê um caractere da entrada padrão
+char * gets(char *)					lê uma string da entrada padrão
+int putc(int, file)					escreve um caractere na saída padrão
+int putchar(int)					escreve um caractere na saída padrão
+int puts(const char *)					escreve uma string na saída padrão
+int ungetc(int, file *)					retorna um caractere lido para o arquivo
+size_t fread(void *, size_--t, size_t, arquivo *)	lê um bloco de dados do arquivo
+size_t fwrite(const void *, size_t, size_t, file *)	escreve um bloco de dados no arquivo
+int fgetpos(file *, fpos_t *)				retorna a posição atual no arquivo
+int fseek(file *, login int, int)			reposiciona o indicador de posição do arquivo
+int fsetpos(file *, const fpos_t*)			configura o indicador de posição do arquivo
+long int ftell(file *)					retorna a posição atual do arquivo
+void rewind(file *)					reposiciona o indicador de posição do arquivo para o início do arquivo
+void clearerr(file *)					limpa os indicadores de erro
+int feof(file *)					indicador de fim de arquivo
+int ferror(file *)					indicador da checagem de erro
+void perror(const char *)				impressão da mensagem de erro
+FILE 							tipo que contém as informações para controlar um arquivo
+EOF							indicador de fim de arquivo
+NULL							ponteiro nulo
+
+stdlib.h
+========
+double atof(const char *)				converte string em double
+int atoi (const char *)					converte string em inteiro
+long int atol (const char *)				converte string em inteiro longo
+double strtod(const char *, char **)			converte string em double e devolvr um ponteiro para o próximo inteiro longo contido na string
+long int strol(const char *, char **, int)		converte string em inteiro longo sem sinal e devolve um ponteiro para o próximo inteiro longo ssem sinal contido na string
+int rand (void)						gera um número aleatório
+void srand(unsigned int)				inicializa o gerador de números aleatórios
+void * malloc(size_t)					aloca espaço para um array na memória
+void * calloc(size_t, size_t)				aloca espaço para um array na memória e inicializa com zeros.
+void free (void *)					libera espaço alocado na memória
+void * realloc (void *, size_t) 			modifica o tamanho do espaço alocado na memória
+void abort(void)					aborta o processo atual
+
